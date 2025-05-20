@@ -14,7 +14,7 @@ WORKDIR /var/www/html
 COPY . .
 
 
-RUN cp -r /public public
+RUN cp -r bootstrap/public public
 
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
